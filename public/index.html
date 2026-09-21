@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sacred Soul turns authorised Discord and Telegram signals into risk-checked demo execution workflows." />
+    <title>Sacred Soul — signal execution, under your control</title>
+    <link rel="stylesheet" href="/site.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Sacred Soul home"><span>↗</span>Sacred Soul</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav"><a href="#workflow">How it works</a><a href="#controls">Risk controls</a><a href="#connectors">Connectors</a><a href="/app.html" class="nav-cta">Open dashboard</a></nav>
+    </header>
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="kicker">AUTOMATED EXECUTION · HUMAN CONTROL</p>
+          <h1>Signals move fast.<br><em>Your rules move first.</em></h1>
+          <p class="hero-lede">Connect authorised signal channels, turn messages into structured orders, and apply account-level risk rules before anything reaches an execution route.</p>
+          <div class="hero-actions"><a class="button primary" href="/app.html">Build your workflow <span>→</span></a><a class="button ghost" href="#workflow">See the flow</a></div>
+          <div class="trust-row"><span>Discord channel picker</span><span>MT5 workflow</span><span>Demo-first execution</span></div>
+        </div>
+        <div class="hero-console" aria-label="Illustrative signal review">
+          <div class="console-bar"><span class="pulse"></span><span>LIVE REVIEW</span><small>Simulation</small></div>
+          <div class="console-source"><div class="source-icon">⌁</div><div><b>Discord · Gold setups</b><small>new authorised message</small></div><time>now</time></div>
+          <pre class="message">BUY XAUUSD CMP 4373.8
+SL 4355.0 · TP 4410.0</pre>
+          <div class="parse-result"><span>01</span><div><small>INTERPRETATION</small><b>Buy XAUUSD · market route</b></div><i>✓</i></div>
+          <div class="parse-result"><span>02</span><div><small>RISK CHECK</small><b>0.10 lot · loss ceiling available</b></div><i>✓</i></div>
+          <div class="parse-result muted-result"><span>03</span><div><small>EXECUTION</small><b>Held for demo confirmation</b></div><i>→</i></div>
+        </div>
+      </section>
+      <section class="logo-strip"><span>One operating layer for</span><b>DISCORD</b><b>TELEGRAM</b><b>MT5</b><b>WEBHOOKS</b><b>DIRECT APIs</b></section>
+      <section class="section-shell split-intro" id="workflow"><p class="kicker">THE EXECUTION PIPELINE</p><h2>Every signal has to earn its way to an order.</h2><p>Sacred Soul treats a message, a risk decision, and an execution as three distinct events. That creates better control, clearer audit trails, and a safer way to test a source before enabling automation.</p></section>
+      <section class="section-shell process-grid"><article><span>01</span><h3>Connect a source</h3><p>Use the Discord channel picker or a supported inbound route. Select specific channels, not an entire account.</p></article><article><span>02</span><h3>Normalize the instruction</h3><p>Direction, instrument, entry, stops, targets and updates become visible structured data—or the message is rejected.</p></article><article><span>03</span><h3>Enforce your guardrails</h3><p>Position size, daily loss, symbol rules, duplicate orders and account restrictions are evaluated before routing.</p></article><article><span>04</span><h3>Review the outcome</h3><p>Track every accepted, rejected, queued and filled action from the same operations dashboard.</p></article></section>
+      <section class="section-shell capability-grid" id="controls"><article class="feature-card wide"><p class="kicker">RISK LIVES BEFORE EXECUTION</p><h2>One clear control plane for every account.</h2><p>Set allowed instruments, per-trade risk, maximum volume, loss ceiling and an emergency pause. We show the reason for every decision instead of silently guessing.</p><div class="limit-row"><span>Daily loss ceiling</span><b>Active</b><strong>$300</strong></div><div class="limit-row"><span>Duplicate trade guard</span><b>Active</b><strong>1 / pair</strong></div><div class="limit-row"><span>Ambiguous instruction</span><b>Blocked</b><strong>Review</strong></div></article><article class="feature-card source-card"><p class="kicker">SOURCE OWNERSHIP</p><h3>Connect what you are allowed to automate.</h3><p>The channel picker makes the selection explicit. You can audit, pause or remove each source independently.</p><div class="source-lines"><span><i></i># gold-signals</span><span><i></i># london-open</span><span class="disabled"><i></i># community-chat</span></div></article><article class="feature-card audit-card"><p class="kicker">AUDITABLE BY DESIGN</p><h3>A calm answer when something goes wrong.</h3><p>Every message keeps its source, parse result, risk reason, routing state and broker/terminal response together.</p><a href="/app.html">Inspect the operations dashboard →</a></article></section>
+      <section class="section-shell connector-section" id="connectors"><div><p class="kicker">EXECUTION ROUTES</p><h2>Start in simulation. Grow into the route that fits the account.</h2></div><div class="connector-list"><article><span class="connector-symbol">◇</span><div><b>MT5 agent</b><small>Windows execution service for authorised MT5 accounts</small></div><em>Planned demo validation</em></article><article><span class="connector-symbol">X</span><div><b>XBTFX direct API</b><small>Broker connector contract, isolated from the browser</small></div><em>Demo queue ready</em></article><article><span class="connector-symbol">⌘</span><div><b>Webhook intake</b><small>Structured inbound route for your own sources</small></div><em>Roadmap</em></article></div></section>
+      <section class="section-shell callout"><p class="kicker">BUILD CAREFULLY</p><h2>Automation is not a promise of profit.</h2><p>It is a way to make execution more consistent with rules you define. Test on a demo account, use only sources you are authorised to automate, and verify broker or firm requirements before any live workflow.</p><a class="button primary" href="/app.html">Open Sacred Soul <span>→</span></a></section>
+    </main>
+    <footer><a class="wordmark" href="#top"><span>↗</span>Sacred Soul</a><span>Demo-first signal operations</span><span>© 2026</span></footer>
+    <script src="/site.js"></script>
+  </body>
+</html>
