@@ -1,0 +1,13 @@
+{
+  "name": "signal-pilot-phase-1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Safe demo-first Discord to MT5 signal execution MVP",
+  "scripts": {
+    "start": "node init && node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

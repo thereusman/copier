@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sacred Soul · Operations</title>
+    <link rel="stylesheet" href="/dashboard.css">
+    <link rel="stylesheet" href="/inbox.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="/"><span>↗</span>Sacred Soul</a>
+        <nav aria-label="Workspace">
+          <button data-page="overview">Overview</button><button data-page="signals">Signal inbox</button><button data-page="trades">Trades</button><button data-page="sources">Signal sources</button><button data-page="accounts">Accounts</button><button data-page="risk">Risk centre</button><button data-page="audit">Audit log</button>
+        </nav>
+        <div class="side-footer"><span class="status-dot"></span>Demo workspace<button data-page="settings">Settings</button></div>
+      </aside>
+      <section class="shell">
+        <header class="topbar"><button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button><a class="mobile-brand" href="/">↗ Sacred Soul</a><div class="top-status"><span class="pill demo">DEMO MODE</span><span class="pill live-state" id="stream">CONNECTING</span><span id="health">All controls active</span></div><button class="stop" id="stop">Pause execution</button></header>
+        <main id="main" tabindex="-1"><div id="content" aria-live="polite"></div></main>
+        <nav class="bottom-nav" aria-label="Mobile navigation"><button data-page="overview">Home</button><button data-page="signals">Signals</button><button data-page="trades">Trades</button><button data-page="sources">Sources</button><button data-page="risk">More</button></nav>
+      </section>
+    </div>
+    <div id="toast" role="status"></div>
+    <script src="/dashboard.js"></script>
+  </body>
+</html>

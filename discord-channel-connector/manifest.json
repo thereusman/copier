@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sacred Soul Discord Connector",
+  "version": "0.1.9",
+  "description": "Select authorised Discord channels for Sacred Soul without reading Discord credentials.",
+  "action": { "default_popup": "popup.html", "default_title": "Sacred Soul Discord Connector" },
+  "permissions": ["activeTab", "storage", "tabs"],
+  "host_permissions": ["https://discord.com/*", "http://localhost/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["https://discord.com/channels/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }, {
+    "matches": ["http://localhost/*"],
+    "js": ["site-bridge.js"],
+    "run_at": "document_start"
+  }]
+}
