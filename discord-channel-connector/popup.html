@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="popup.css"><title>Sacred Soul</title></head>
+  <body>
+    <main>
+      <header><span>↗</span><div><b>Sacred Soul</b><small>Discord Connector</small></div></header>
+      <section id="pairing"><p>Enter the one-time pairing code from Sacred Soul → Signal Sources.</p><input id="code" autocomplete="off" placeholder="PAIRING CODE" maxlength="8"><button id="pair">Pair this browser</button></section>
+      <section id="channels" hidden><div class="heading"><div><b>Select signal channels</b><small>Only selected channels are monitored.</small></div><button id="refresh" class="subtle">Refresh</button></div><div id="list"></div><button id="save">Save selected channels</button><p id="status" role="status"></p></section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
